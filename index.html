@@ -6,7 +6,20 @@
     <title>Presentation title</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.2/dist/reveal.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.2/dist/theme/night.css" id="theme">
-    <script src="https://cdn.jsdelivr.net/npm/device@0.2.7/lib/device.min.js"></script>
+    <style>
+        /* Estilos para dispositivos móveis */
+        @media screen and (max-width: 768px) {
+            .reveal .slides section {
+                padding: 20px;
+            }
+            .reveal p {
+                font-size: 24px;
+            }
+            .reveal h1 {
+                font-size: 48px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -47,20 +60,6 @@
             minScale: 0.2,
             maxScale: 1.5
         });
-
-        // Detectar dispositivo móvel e aplicar estilos responsivos
-        if (device.mobile()) {
-            var style = document.createElement('style');
-            style.innerHTML = `
-                .reveal p {
-                    font-size: 20px;
-                }
-                .reveal h1 {
-                    font-size: 40px;
-                }
-            `;
-            document.head.appendChild(style);
-        }
     </script>
 </body>
 
