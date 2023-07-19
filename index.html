@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Presentation title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.2/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.2/dist/theme/night.css" id="theme">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>Slide 1</h1>
+                <p>Conteúdo do slide 1.</p>
+            </section>
+            <section>
+                <h1>Slide 2</h1>
+                <p>Conteúdo do slide 2.</p>
+            </section>
+            <section>
+                <h1>Slide 3</h1>
+                <p>Conteúdo do slide 3.</p>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.2/dist/reveal.js"></script>
+    <script>
+        // Inicializar o reveal.js
+        Reveal.initialize({
+            // Especificar o tema "night" (tema escuro)
+            // Você também pode mudar para "white" para obter o tema claro.
+            // Para dark theme, não é necessário especificar o tema como já está sendo carregado.
+            theme: 'night',
+            // Configuração de transição
+            transition: 'convex',
+            // Fator de escala para o mobile
+            // Você pode ajustar esse valor para melhor se adequar ao seu dispositivo
+            // Um valor menor irá aumentar o conteúdo na tela do dispositivo móvel
+            // e um valor maior irá diminuir.
+            width: 1600,
+            height: 900,
+            margin: 0.1,
+            minScale: 0.2,
+            maxScale: 1.5
+        });
+    </script>
+</body>
+
+</html>
